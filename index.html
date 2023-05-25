@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Contador</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Contador en Vue</h1>
+
+      <main class="contador">
+        <button v-on:click="incrementar" value="click">Incrementa</button>
+        <p>  {{contador}}  </p>
+        <button v-on:click="decrementar" value="click">Decrementa</button>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
